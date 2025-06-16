@@ -1,1 +1,451 @@
+/*----- Universal CSS -----*/
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Martel Sans", sans-serif;
+  background-color: #333;
+}
+/*----- Navbar CSS -----*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 40px;
+}
+.navbar .logo h1 {
+  font-size: 23px;
+  color: #fff;
+}
 
+.navbar .nav-links ul {
+  font-size: 18px;
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0px;
+}
+.navbar .nav-links ul li a {
+  text-decoration: none;
+}
+.navbar .nav-links ul li a:hover {
+  color: rgb(251, 124, 77);
+}
+
+/*----- Main CSS -----*/
+main {
+  margin: 50px 0px;
+}
+/*----- Section 1 CSS -----*/
+.section1 h1 {
+  margin: 0px 30px;
+  font-size: 30px;
+}
+.home {
+  display: flex;
+  justify-content: space-around;
+}
+.home .text span {
+  color: rgb(238, 98, 46);
+  font-size: 40px;
+}
+.home .text .line {
+  color: rgb(238, 98, 46);
+  font-size: 25px;
+}
+.home .text p {
+  font-size: 25px;
+}
+.name {
+  display: flex;
+  gap: 2px;
+}
+
+.post h1 {
+  font-size: 35px;
+}
+
+.button {
+  margin: 0px 50px;
+}
+.button button {
+  padding: 8px 16px;
+  margin: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#but1 {
+  background-color: rgb(238, 98, 46);
+}
+#but2 {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  border: 2px solid rgb(238, 98, 46);
+}
+
+.profile img {
+  width: 450px;
+  height: 450px;
+  border-radius: 5%;
+  margin-left: 50px;
+  opacity: 0.4;
+}
+/*----- Section 2 CSS -----*/
+.scroll-bar {
+  margin: 20px 0;
+  font-size: 20px;
+  padding-block: 8px;
+  overflow: hidden;
+  user-select: none;
+  display: flex;
+  --gap: 30px;
+  gap: var(--gap);
+  cursor: pointer;
+  border-block: 2px solid rgb(238, 98, 46);
+}
+.scroll-bar ul {
+  list-style: none;
+  flex-shrink: 0;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gap);
+  animation: scroll 20s linear infinite;
+}
+
+.scroll-bar ul li {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(167, 167, 167);
+}
+
+.scroll-bar:hover ul {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+/*----- Section 3 CSS -----*/
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 10%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-left: 3px solid rgb(238, 98, 46);
+  padding-left: 20px;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.service .icon {
+  font-size: 25px;
+}
+
+.service p {
+  font-size: 18px;
+}
+
+.about-right {
+  max-width: 600px;
+}
+
+.about-right h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.about-right .description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat .number {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.stat .highlight {
+  color: rgb(238, 98, 46);
+}
+
+.stat p {
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    padding: 30px 5%;
+  }
+
+  .stats {
+    justify-content: center;
+  }
+
+  .about-right h2 {
+    font-size: 28px;
+  }
+
+  .stat .number {
+    font-size: 28px;
+  }
+}
+
+/*----- Section 4 CSS -----*/
+.projects-section {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.section-title {
+  font-size: 36px;
+  text-align: center;
+}
+
+.underline {
+  width: 3px;
+  height: 60px;
+  background-color: rgb(238, 98, 46);
+  margin: 10px auto 40px auto;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.project-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.project-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tags span {
+  background-color: #1f2a33;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.project-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.github {
+  background-color: rgb(238, 98, 46);
+  color: white;
+}
+
+.project-link {
+  border: 1px solid #fff;
+  color: white;
+}
+
+.project-media {
+  flex: 1;
+  min-width: 280px;
+}
+
+.project-media img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .project-title {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 12px;
+  }
+}
+
+/*----- Section 5 -----*/
+.contact {
+  padding: 50px 0;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title p {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.title span {
+  color: rgb(238, 98, 46);
+  font-size: 30px;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-left {
+  flex: 1;
+  padding: 20px;
+}
+
+.que p {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#but3 {
+  background-color: rgb(238, 98, 46);
+  padding: 12px 24px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#but3:hover {
+  background-color: rgb(220, 70, 30);
+}
+
+.contact-right {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.contact-right input,
+.contact-right textarea {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  transition: border 0.3s ease;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus {
+  border-color: rgb(238, 98, 46);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/*----- Footer -----*/
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+footer h3 {
+  background-color: #222;
+}
+footer p {
+  background-color: #222;
+  color: rgb(192, 189, 189);
+}
+footer .contact-logo {
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+footer .contact-logo img {
+  background-color: #222;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+footer .contact-logo a{
+      background-color: #222;
+}
