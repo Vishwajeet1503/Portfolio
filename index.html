@@ -21,16 +21,27 @@
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contacts">Contact</a></li>
           </ul>
+        </div>
+        <div class="social">
+          <a href="vishwajeetmahorevm@gmail.com">
+            <img src="Assets/mail.svg" alt="" />
+          </a>
+          <a href="https://github.com/Vishwajeet1503">
+            <img src="Assets/Github.svg" alt="" />
+          </a>
+          <a href="https://www.linkedin.com/in/vishwajeet-k-mahore-0510b62aa/">
+            <img src="Assets/Linkedin.svg" alt="" />
+          </a>
         </div>
       </nav>
     </header>
     <!----- Main Body ----->
     <main>
       <!----- Section 1 ----->
-      <section class="section1">
+      <section id="home" class="section1">
         <div class="home">
           <div class="text">
             <div class="hello">
@@ -44,12 +55,17 @@
               <h1>Full Stack Developer</h1>
             </div>
             <div class="button">
-              <button id="but1">Got a project?</button>
-              <button id="but2">Resume</button>
+              <a href="#contacts"><button id="but1">Got a project?</button></a>
+              <a
+                href="Assets/Vishwajeet Mahore Full Stack Web Developers.pdf"
+                download=""
+              >
+                <button id="but2">Resume</button></a
+              >
             </div>
           </div>
           <div class="profile">
-            <img src="" alt="" />
+            <img src="Assets/pngwing.com.png" alt="" />
           </div>
         </div>
       </section>
@@ -87,7 +103,7 @@
       </section>
 
       <!----- Section 3 ----->
-      <section class="about-section">
+      <section id="about" class="about-section">
         <div class="about-left">
           <div class="service">
             <div class="dot"></div>
@@ -111,10 +127,12 @@
         <div class="about-right">
           <h2>About me</h2>
           <p class="description">
-            I started my software journey from photography. Through that, I
-            learned to love the process of creating from scratch. Since then,
-            this has led me to software development as it fulfills my love for
-            learning and building things.
+            I am a beginner full-stack web developer with a solid foundation in
+            HTML, CSS, JavaScript, React, and backend technologies. Through
+            internships and personal projects, I’ve gained practical experience
+            building dynamic, user-friendly web solutions. Passionate about
+            learning and problem-solving, I’m eager to grow my skills and
+            contribute to impactful development projects.
           </p>
           <!--<div class="stats">
             <div class="stat">
@@ -134,30 +152,34 @@
       </section>
 
       <!----- Section 4 ----->
-      <section class="projects-section">
+      <section id="project" class="projects-section">
         <h2 class="section-title">Projects</h2>
         <div class="underline"></div>
 
         <div class="project-container">
           <article class="project">
             <div class="project-media">
-              <img
-                src="https://via.placeholder.com/300x200?text=Terminal+Output"
-                alt="Battleship Terminal"
-              />
+              <img src="Assets/Get-Chai.png" alt="Battleship Terminal" />
             </div>
             <div class="project-info">
-              <h3 class="project-title">Dentallty</h3>
+              <h3 class="project-title">Dentally</h3>
               <div class="tags">
                 <span>HTML</span>
-                <span>CSS</span>
+                <span>Tailwind CSS</span>
                 <span>Javascript</span>
-                <span>MERN</span>
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>MongoDB</span>
               </div>
               <p class="project-desc">
-                Used components of Javascript to implement basic data structures
-                through the game of Battleship. Used a terminal to display ships
-                and tracked where ships are hit or missed.
+                This website is a comprehensive platform that allows people to
+                easily book appointments with doctors for their health
+                check-ups. It also provides doctors with tools to manage patient
+                records, accept or reject appointments, and handle online
+                transactions securely. The platform is designed to streamline
+                the appointment process and enhance the overall experience for
+                both patients and healthcare providers.
               </p>
               <div class="buttons">
                 <a href="#" class="btn github">View Github</a>
@@ -170,50 +192,62 @@
               <h3 class="project-title">Get Me a Chai</h3>
               <div class="tags">
                 <span>HTML</span>
-                <span>CSS</span>
+                <span>Tailwind CSS</span>
                 <span>Javascript</span>
+                <span>React.js</span>
+                <span>Next.js</span>
               </div>
               <p class="project-desc">
-                Uses a public movie API to build a collection movie list that
-                sorts from A to Z or vice versa. It also counts how many movies
-                in each container and adds user's favorite movies into another
-                container.
+                This platform enables digital creators and social media
+                influencers to receive support, gifts, and donations directly
+                from their fans. It offers a seamless and user-friendly
+                experience, making it easy for creators to connect with their
+                audience and grow their community.
               </p>
               <div class="buttons">
-                <a href="#" class="btn github">View Github</a>
+                <a
+                  href="https://github.com/Vishwajeet1503/Get-Me-a-Chai.git"
+                  class="btn github"
+                  >View Github</a
+                >
               </div>
             </div>
             <div class="project-media">
-              <img
-                src="https://via.placeholder.com/300x200?text=Movie+Images"
-                alt="Movie Posters"
-              />
+              <img src="Assets/Get-Chai.png" alt="Movie Posters" />
             </div>
           </article>
         </div>
       </section>
 
       <!----- Section 5 ----->
-      <section class="contact">
-        <div class="title">
-          <p><span>----</span> Contact Me <span>----</span></p>
-        </div>
-        <div class="contact-section">
-          <div class="contact-left">
-            <div class="que">
-              <p>
-                Have a Project? <br />
-                Let's talk!
-              </p>
+      <section id="contacts" class="contact">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <div class="title">
+            <p><span>----</span> Contact Me <span>----</span></p>
+          </div>
+          <div class="contact-section">
+            <div class="contact-left">
+              <div class="que">
+                <p>
+                  Have a Project? <br />
+                  Let's talk!
+                </p>
+              </div>
+              <button id="but3" type="submit">Submit</button>
             </div>
-            <button id="but3">Submit</button>
+
+            <div class="contact-right">
+              <input type="hidden" name="access_key" value="b724e76c-f414-4616-b24e-c6c358765088">
+              <input type="text" name="name" placeholder="Name" required />
+              <input type="email" name="email" placeholder="Email" required />
+              <textarea
+                name="Message"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
           </div>
-          <div class="contact-right">
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <textarea placeholder="Message"></textarea>
-          </div>
-        </div>
+        </form>
       </section>
     </main>
     <!----- Footer ----->
@@ -222,16 +256,17 @@
         <h3>Vishwajeet K. Mahore</h3>
         <p>Dream | Belive | Code</p>
         <div class="contact-logo">
-          <a href="vishwajeetmahorevm@gmail.com"><img src="Assets/mail.svg" alt="" /></a>
-          <a href="https://github.com/Vishwajeet1503"
-            ><img src="Assets/Github.svg" alt=""
-          /></a>
-          <a href="https://www.linkedin.com/in/vishwajeet-k-mahore-0510b62aa/"
-            ><img src="Assets/Linkedin.svg" alt=""
-          /></a>
+          <a href="vishwajeetmahorevm@gmail.com">
+            <img src="Assets/mail.svg" alt="" />
+          </a>
+          <a href="https://github.com/Vishwajeet1503">
+            <img src="Assets/Github.svg" alt="" />
+          </a>
+          <a href="https://www.linkedin.com/in/vishwajeet-k-mahore-0510b62aa/">
+            <img src="Assets/Linkedin.svg" alt="" />
+          </a>
         </div>
       </div>
     </footer>
   </body>
 </html>
-
