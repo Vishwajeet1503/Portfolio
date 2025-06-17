@@ -6,6 +6,11 @@
   font-family: "Martel Sans", sans-serif;
   background-color: #333;
 }
+
+html {
+  scroll-behavior: smooth;
+    background: linear-gradient(270deg, rgb(238, 98, 46), rgb(43, 43, 43));
+}
 /*----- Navbar CSS -----*/
 .navbar {
   display: flex;
@@ -19,12 +24,33 @@
   color: #fff;
 }
 
+.navbar .social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navbar .social img {
+  text-decoration: none;
+  gap: 50px;
+  height: 28px;
+}
+
+.navbar .social img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
 .navbar .nav-links ul {
   font-size: 18px;
   list-style: none;
   display: flex;
   gap: 25px;
   margin: 0px;
+}
+
+.navbar .nav-links ul li:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 .navbar .nav-links ul li a {
   text-decoration: none;
@@ -44,7 +70,7 @@ main {
 }
 .home {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .home .text span {
   color: rgb(238, 98, 46);
@@ -81,18 +107,36 @@ main {
 #but1 {
   background-color: rgb(238, 98, 46);
 }
+#but1:hover {
+  background-color: rgb(220, 70, 30);
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
 #but2 {
   background-color: rgba(255, 255, 255, 0);
   color: white;
   border: 2px solid rgb(238, 98, 46);
 }
+#but2:hover {
+  color: rgb(238, 98, 46);
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.profile{
+  background: linear-gradient(200deg, rgba(199, 82, 40, 0.997), rgb(7, 7, 7));
+  border-top-left-radius: 30rem 10rem ;
+  border-top-right-radius: 15% ;
+  border-bottom-left-radius: 10% ;
+  border-bottom-right-radius:  30rem 10rem;
+  padding: 0px;
 
+  
+}
 .profile img {
-  width: 450px;
-  height: 450px;
+  width: 400px;
+  height: 500px;
   border-radius: 5%;
-  margin-left: 50px;
-  opacity: 0.4;
+  background-color: transparent;
 }
 /*----- Section 2 CSS -----*/
 .scroll-bar {
@@ -120,7 +164,7 @@ main {
 .scroll-bar ul li {
   font-size: 20px;
   font-weight: bold;
-  color: rgb(167, 167, 167);
+  color: rgb(190, 190, 190);
 }
 
 .scroll-bar:hover ul {
@@ -298,6 +342,11 @@ main {
   background-color: rgb(238, 98, 46);
   color: white;
 }
+.github:hover {
+  background-color: rgb(220, 70, 30);
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
 
 .project-link {
   border: 1px solid #fff;
@@ -312,6 +361,8 @@ main {
 .project-media img {
   width: 100%;
   border-radius: 5px;
+  border: 3px solid rgb(238, 98, 46);
+  padding: 2px;
 }
 
 /* Responsive */
@@ -388,6 +439,8 @@ main {
 
 #but3:hover {
   background-color: rgb(220, 70, 30);
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 .contact-right {
@@ -402,6 +455,7 @@ main {
 .contact-right textarea {
   padding: 12px;
   font-size: 16px;
+  border: 1px solid white;
   border-radius: 5px;
   outline: none;
   width: 100%;
@@ -446,6 +500,6 @@ footer .contact-logo img {
   transition: transform 0.3s ease;
 }
 
-footer .contact-logo a{
-      background-color: #222;
+footer .contact-logo a {
+  background-color: #222;
 }
