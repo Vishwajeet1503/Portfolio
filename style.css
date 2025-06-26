@@ -4,19 +4,19 @@
   padding: 0;
   color: white;
   font-family: "Martel Sans", sans-serif;
-  background-color: #333;
+  background-color: #0b192c;
 }
+
 
 html {
   scroll-behavior: smooth;
-    background: linear-gradient(270deg, rgb(238, 98, 46), rgb(43, 43, 43));
 }
 /*----- Navbar CSS -----*/
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #0b192c;
   padding: 10px 40px;
 }
 .navbar .logo h1 {
@@ -41,7 +41,7 @@ html {
 }
 
 .navbar .nav-links ul {
-  font-size: 18px;
+  font-size:20px;
   list-style: none;
   display: flex;
   gap: 25px;
@@ -66,7 +66,7 @@ main {
 /*----- Section 1 CSS -----*/
 .section1 h1 {
   margin: 0px 30px;
-  font-size: 30px;
+  font-size: 50px;
 }
 .home {
   display: flex;
@@ -74,14 +74,14 @@ main {
 }
 .home .text span {
   color: rgb(238, 98, 46);
-  font-size: 40px;
+  font-size: 60px;
 }
 .home .text .line {
   color: rgb(238, 98, 46);
-  font-size: 25px;
+  font-size: 45px;
 }
 .home .text p {
-  font-size: 25px;
+  font-size: 45px;
 }
 .name {
   display: flex;
@@ -89,19 +89,21 @@ main {
 }
 
 .post h1 {
-  font-size: 35px;
+  font-size: 50px;
 }
 
 .button {
   margin: 0px 50px;
 }
 .button button {
-  padding: 8px 16px;
+  padding: 12px 25px;
   margin: 10px;
   border: none;
   color: white;
   cursor: pointer;
   font-weight: bold;
+  font-size: 15px;
+  border-radius: 20px;
 }
 
 #but1 {
@@ -122,16 +124,25 @@ main {
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
-.profile{
-  background: linear-gradient(200deg, rgba(199, 82, 40, 0.997), rgb(7, 7, 7));
-  border-top-left-radius: 30rem 10rem ;
-  border-top-right-radius: 15% ;
-  border-bottom-left-radius: 10% ;
-  border-bottom-right-radius:  30rem 10rem;
+.profile {
+  background: linear-gradient(120deg, #1d243b, #ff6500);
+  border-top-left-radius: 30rem 10rem;
+  border-top-right-radius: 15%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 30rem 10rem;
   padding: 0px;
 
-  
+  /* Make all border-radius properties smoothly transition */
+  transition: border-radius 0.9s ease-in-out;
 }
+
+.profile:hover {
+  border-bottom-left-radius: 30rem 10rem;
+  border-bottom-right-radius: 35%;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 30rem 10rem;
+}
+
 .profile img {
   width: 400px;
   height: 500px;
@@ -149,8 +160,10 @@ main {
   --gap: 30px;
   gap: var(--gap);
   cursor: pointer;
-  border-block: 2px solid rgb(238, 98, 46);
+  border-block: 2px solid #38bdf8;
+  background: linear-gradient(to right, #0f172a, #1e293b);
 }
+
 .scroll-bar ul {
   list-style: none;
   flex-shrink: 0;
@@ -159,12 +172,15 @@ main {
   justify-content: space-between;
   gap: var(--gap);
   animation: scroll 20s linear infinite;
+  background:transparent;
 }
 
 .scroll-bar ul li {
   font-size: 20px;
   font-weight: bold;
-  color: rgb(190, 190, 190);
+  color: #38bdf8;
+  background:transparent;
+  
 }
 
 .scroll-bar:hover ul {
@@ -176,6 +192,7 @@ main {
     transform: translateX(calc(-100% - 20px));
   }
 }
+
 /*----- Section 3 CSS -----*/
 .about-section {
   display: flex;
@@ -360,6 +377,7 @@ main {
 
 .project-media img {
   width: 100%;
+  height: auto;
   border-radius: 5px;
   border: 3px solid rgb(238, 98, 46);
   padding: 2px;
